@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Green: #c5f82a;
+    --White: #ffffff;
+    --Grey-700: #333333;
+    --Grey-800: #1f1f1f;
+    --Grey-900: #141414;
+    
+    --fw-1: 400;
+    --fw-2: 600;
+    --fw-3: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey-900);
+    font-family: "Inter", sans-serif;
+    padding: 1rem;
+}
+
+.card{
+    padding: 2.5rem;
+    display: block;
+    background-color: var(--Grey-800);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 375px;
+    text-align: center;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details img{
+    width: 88px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.details h1{
+    color: var(--White);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: var(--fw-3);
+}
+
+.details h2{
+    color: var(--Green);
+    font-size: 0.875rem;
+    margin: 10px 0px 25px;
+    font-weight: var(--fw-2);
+}
+
+.details p{
+    color: var(--White);
+    font-size: 0.850rem;
+    margin-bottom: 25px;
+    font-weight: var(--fw-1);
+}
+
+.links{
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    gap: 15px;
+}
+
+.links button {
+    width: 100%;
+    height: 100%;
+    background-color: var(--Grey-700);
+    border: none;
+    border-radius: 8px;
+    color: var(--White);
+    font-weight: var(--fw-3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-wrap: pretty;
+}
+
+.links button:hover {
+    background-color: var(--Green);
+    color: var(--Grey-800);
+}
+
+.links a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 100px; color: var(--White); }
+.attribution a { color: var(--Green) }
